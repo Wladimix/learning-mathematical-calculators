@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ============================================================ */
+
+
+#equationRoots {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+#equationRoots #titles, #equationRoots #inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#equationRoots #titles p,
+#equationRoots #inputs input {
+    margin: 4px 4px;
+}
+#equationRoots #findRootsButton,
+#equationRoots #pythagoreanTriple,
+#equationRoots #foundCommonDivisors {
+    margin: 4px 0px 4px 40px;
+    width: 150px;
+    font-size: 18px;
+}
+
+
+/* ============================================================ */
+/* Анимация */
+
+
+@keyframes pythagoreanTriple {
+    0% {
+        background-color: red;
+        color: white;
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.animationPythagoreanTriple {
+    animation-name: pythagoreanTriple;
+    animation-duration: 0.15s;
+}

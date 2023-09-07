@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Математические калькуляторы</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h3>Квадратное уравнение "ax^2 + bx + c = 0".</h3>
+
+    <div id="equationRoots">
+        <div id="titles">
+            <p id="pA"><i>Коэффициент a:</i></p>
+            <p id="pB"><i>Коэффициент b:</i></p>
+            <p id="pC"><i>Коэффициент c:</i></p>
+            <p id="pX1"><b>Первый корень:</b></p>
+            <p id="pX2"><b>Второй корень:</b></p>
+        </div>
+        <div id="inputs">
+            <input id="inpA" placeholder="введите коэффициент">
+            <input id="inpB" placeholder="введите коэффициент">
+            <input id="inpC" placeholder="введите коэффициент">
+            <input id="inpX1" placeholder="первый корень">
+            <input id="inpX2" placeholder="второй корень">
+        </div>
+        <button id="findRootsButton">Найти корни уравнения</button>
+        <button id="pythagoreanTriple">Проверить коэффициенты на "тройку Пифагора"</button>
+        <button id="foundCommonDivisors">Найти общие делители корней уравнения</button>
+    </div>
+
+    <h3>Общие делители корней уравнения:</h3>
+
+    <ul id="commonDivisorsList">
+        <li>первый</li>
+        <li>второй</li>
+        <li>и т.д...</li>
+    </ul>
+
+    <script src="mathematical_calculators.js"></script>
+</body>
+</html>
